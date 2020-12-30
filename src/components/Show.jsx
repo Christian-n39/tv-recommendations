@@ -1,8 +1,24 @@
 import React from 'react'
 
+import '../styles/components/show.css'
+
 function Show({ show }) {
+  const rating = show.rating.average
   return (
-    <h1>Show</h1>
+    <article className="Show" >
+      <figure>
+        <img src={show.image.medium} alt={show.name} />
+      </figure>
+      <div className="Show-description" >
+        <h1>{show.name}</h1>
+        <p>
+          Rating:
+          <span className={rating <4 ? 'isLow' : rating <= 7 ? 'isRegular' : 7 < rating ? 'isHigh' : undefined}>
+            {'  '}{rating}
+          </span>
+        </p>
+      </div>
+    </article>
   )
 }
 

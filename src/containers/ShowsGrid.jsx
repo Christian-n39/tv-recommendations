@@ -1,14 +1,17 @@
 import React from 'react'
 
+import Show from '../components/Show'
+import '../styles/containers/showsGrid.css'
+
 function ShowsGrid({ shows }) {
   return (
-    <section>
+    <div className="ShowsGrid" >
       {
         shows.map(show => (
-          <p key={show.id} >{show.name}</p>
+          <Show key={show.id} show={show} />
         ))
       }
-    </section>
+    </div>
   )
 }
 

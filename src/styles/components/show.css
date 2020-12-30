@@ -1,0 +1,28 @@
+.Show {
+  background-color: #1b4167;
+  border-radius: 3px;
+  margin: 14px;
+  width: 210px;
+  cursor: pointer;
+}
+.Show:hover {
+  box-shadow: 0 0 4px 1px #ffffff;
+}
+.Show figure {
+  min-height: 299px;
+}
+.Show-description {
+  padding: 10px;
+}
+.isLow {
+  color: #bf314b;
+  font-weight: bolder;
+}
+.isRegular {
+  color: #f2ef38;
+  font-weight: bolder;
+}
+.isHigh {
+  color: #00d859;
+  font-weight: bolder;
+}

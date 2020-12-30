@@ -8,6 +8,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   color: #ffffff;
+  font-family: 'Mulish', sans-serif;
 }
 html {
   overflow-x: hidden;

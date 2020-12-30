@@ -1,11 +1,10 @@
 import React from 'react'
 import '../styles/components/searchInput.css'
 
-function SearchInput() {
+function SearchInput({ handleSearch }) {
   return (
     <div  className="Search">
-      <input type="search" placeholder="Search..." />
-      <button type="button"></button>
+      <input type="search" onChange={e => handleSearch(e.target.value)} placeholder="Search..." />
     </div>
   )
 }

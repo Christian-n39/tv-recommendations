@@ -2,6 +2,12 @@
   display: flex;
   justify-content: space-around;
   background-color: transparent;
+  padding: 6px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.Nav-options:hover {
+  box-shadow: 0 0 4px 1px #ffffff;
 }
 .Nav-option {
   margin: 10px;

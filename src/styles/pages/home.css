@@ -1,6 +1,36 @@
+.Home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .Navigation {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 100%;
   padding: 7px;
+  flex-wrap: wrap;
+}
+.ShowsSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: fit-content;
+  width: 70%;
+  justify-content: center;
+  margin: 20px 0;
+}
+.SectionTitle {
+  align-self: flex-start;
+  font-size: 28px;
+}
+.ShowsSection-button {
+  padding: 9px 50px;
+  font-weight: bold;
+  background-color: white;
+  border-radius: 4px;
+}
+
+hr {
+  width: 100%;
 }
