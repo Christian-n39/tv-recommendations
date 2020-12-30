@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 
 function useFilteredChunks(genre) {
   const [filteredChunk, setFilteredChunk] = useState([])

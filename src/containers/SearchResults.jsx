@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import Show from '../components/Show'
 
@@ -8,7 +9,9 @@ function SearchResults({ shows, search }) {
     <div className="ShowsGrid" >
       {
         results.map(show => (
-          <Show key={show.id} show={show} />
+          <Link key={show.id} to={`/shows/${show.id}`}>
+            <Show show={show} />
+          </Link>
         ))
       }
     </div>
