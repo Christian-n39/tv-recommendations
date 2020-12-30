@@ -1,19 +1,24 @@
 import React, { useEffect, useState } from 'react'
+import useFilteredChinks from '../hooks/useFilteredChunks'
 
 import SearchInput from '../components/SearchInput'
 
 function Home() {
+  const [genre, setGenre] = useState('Comedy')
+  const { filteredChunk, fetchChunk } = useFilteredChinks(genre)
+  const [chunk, setChunk] = useState(20)
+
   useEffect(() => {
-    fetch('http://api.tvmaze.com/shows')
-      .then(res => res.json())
-      .then(data => {
-        const filteredShowsByGenre = data.filter(show => show.genres.includes('Action'))
-        console.log(filteredShowsByGenre)
-      })
-  }, [])
+    fetchChunk(0, chunk)
+  }, [chunk, genre])
+
+
+  console.log(filteredChunk)
   return (
     <>
       <SearchInput />
+      <button onClick={() => setChunk(chunk + 20)}>Click me</button>
+      <button onClick={() => setGenre('Drama')} >Change genre to 'Drama'</button>
     </>
   )
 }
