@@ -1,0 +1,21 @@
+.Search {
+  display: flex;
+  align-items: center;
+}
+.Search input {
+  background: transparent;
+  padding: 9px;
+  border: 1px solid white;
+  border-radius: 18px;
+}
+.Search input::placeholder {
+  color: #ffffff;
+}
+.Search button {
+  margin-left: 7px;
+  background-image: url('https://image.flaticon.com/icons/png/128/128/128632.png');
+  background-size: contain;
+  background-color: transparent;
+  width: 30px;
+  height: 30px;
+}

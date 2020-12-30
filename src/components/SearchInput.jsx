@@ -1,11 +1,12 @@
 import React from 'react'
+import '../styles/components/searchInput.css'
 
 function SearchInput() {
   return (
-    <>
-      <input type="text" placeholder="Search by genre" />
-      <button type="button">Search</button>
-    </>
+    <div  className="Search">
+      <input type="search" placeholder="Search..." />
+      <button type="button"></button>
+    </div>
   )
 }
 

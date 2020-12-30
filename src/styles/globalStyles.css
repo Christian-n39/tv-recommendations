@@ -1,0 +1,32 @@
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: #080f16;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #ffffff;
+}
+html {
+  overflow-x: hidden;
+}
+button {
+  cursor: pointer;
+}
+button, input {
+  border: none;
+  outline: none;
+  color: black;
+}
+button:focus, input:focus {
+  border: none;
+  outline: none;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}

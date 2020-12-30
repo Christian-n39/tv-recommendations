@@ -1,0 +1,9 @@
+.Nav-options {
+  display: flex;
+  justify-content: space-around;
+  background-color: transparent;
+}
+.Nav-option {
+  margin: 10px;
+  color: black;
+}
