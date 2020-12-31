@@ -11,7 +11,7 @@ function useFilteredChunks(genre) {
       const chunk = filteredShowsByGenre.slice(from, limit)
       setFilteredChunk(chunk)
     } else {
-      fetch('http://api.tvmaze.com/shows')
+      fetch('https://api.tvmaze.com/shows')
       .then(res => res.json())
       .then(data => {
         data = randomize(data)
