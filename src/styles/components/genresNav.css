@@ -13,3 +13,8 @@
   margin: 10px;
   color: black;
 }
+.current-genre {
+  position: fixed;
+  top: 7px;
+  right: 10px;
+}

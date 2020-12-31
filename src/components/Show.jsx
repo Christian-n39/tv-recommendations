@@ -7,7 +7,7 @@ function Show({ show }) {
   return (
     <article className="Show" >
       <figure>
-        <img src={show.image.medium} alt={show.name} />
+        <img src={show.image.medium} alt={show.name} width='210' />
       </figure>
       <div className="Show-description" >
         <h1>{show.name}</h1>
@@ -22,4 +22,4 @@ function Show({ show }) {
   )
 }
 
-export default Show
+export default React.memo(Show)

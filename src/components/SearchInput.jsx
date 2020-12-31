@@ -4,9 +4,9 @@ import '../styles/components/searchInput.css'
 function SearchInput({ handleSearch }) {
   return (
     <div  className="Search">
-      <input type="search" onChange={e => handleSearch(e.target.value)} placeholder="Search..." />
+      <input type="search" onChange={e => handleSearch(e.target.value)} placeholder="Search show by name..." />
     </div>
   )
 }
 
-export default SearchInput
+export default React.memo(SearchInput)

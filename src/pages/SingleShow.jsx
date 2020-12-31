@@ -10,7 +10,6 @@ function SingleShow() {
   useEffect(() => {
     fetchSingleShow(id)
   }, [])
-  console.log(show)
   return (
     <div className="SingleShow" >
       <article className="SingleShow-badge" >
@@ -18,7 +17,7 @@ function SingleShow() {
           Object.keys(show).length ?
           <>
             <figure>
-              <img className="SingleShow-image" src={show.image.original} alt="image"/>
+              <img className="SingleShow-image" src={show.image.original} width='210' alt="image"/>
             </figure>
             <div className="SingleShow-description">
               <h1>{show.name}</h1>
@@ -30,7 +29,7 @@ function SingleShow() {
                     {
                       <div className="Genres">
                         {show.genres.map(genre => (
-                          <span>{genre}</span>
+                          <span key={genre}>{genre}</span>
                         ))}
                       </div>
                     }
@@ -39,7 +38,7 @@ function SingleShow() {
               <div className="Description" dangerouslySetInnerHTML={{__html: show.summary}} />
             </div>
           </>
-          : <h1>Loading</h1>
+          : <p>Loading</p>
         }
       </article>
       <Link to='/' className="Link" >

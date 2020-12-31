@@ -8,11 +8,14 @@ function ShowsGrid({ shows }) {
   return (
     <div className="ShowsGrid" >
       {
+        shows.length
+          ?
         shows.map(show => (
           <Link key={show.id} to={`/shows/${show.id}`}>
             <Show show={show} />
           </Link>
         ))
+        : <p>Loading...</p>
       }
     </div>
   )

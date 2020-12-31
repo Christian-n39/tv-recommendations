@@ -14,6 +14,7 @@ function SearchResults({ shows, search }) {
           </Link>
         ))
       }
+      { !results.length && <p>No results found</p> }
     </div>
   )
 }
