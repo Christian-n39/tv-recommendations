@@ -6,7 +6,7 @@ This proyect is a Reactjs frontend consumer using the [tvmaze api](https://www.t
 
 ------------
 
-[Take a look!](https://tv-recommender.vercel.app "Take a look!")
+[Take a look!](https://tv-recommendations.vercel.app "Take a look!")
 
 ------------
 
