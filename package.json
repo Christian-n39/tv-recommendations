@@ -2,6 +2,7 @@
   "name": "prueba",
   "version": "0.1.0",
   "private": true,
+  "author": "Christian Compeán",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",
