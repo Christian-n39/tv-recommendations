@@ -30,6 +30,9 @@ function Home() {
   const handleSearch= (value) => {
     setSearch(value)
   }
+  const showMore = (value) => {
+    setChunk(chunk + 5)
+  }
   return (
     <section className="Home">
       <section className="Navigation">
@@ -47,8 +50,8 @@ function Home() {
         }
         <p className="SectionTitle" >Shows</p>
         <hr/>
-        <ShowsGrid shows={filteredChunk} />
-        <button className="ShowsSection-button" onClick={() => setChunk(chunk + 5)}>Show More</button>
+        <ShowsGrid shows={filteredChunk} showMore={showMore} />
+        
       </section>
     </section>
   )
