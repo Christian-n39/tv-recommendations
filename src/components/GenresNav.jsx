@@ -17,7 +17,7 @@ function GenresNav({ genres, currentGenre, selectGenre }) {
         <p>Select genre</p>
         <select onChange={e => selectGenre(e.target.value)} value={currentGenre} className="Nav-options">
           {
-            genres.map(genre => (
+            genres.sort().map(genre => (
               <option key={genre} value={genre} className="Nav-option">{genre}</option>
             ))
           }
