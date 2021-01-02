@@ -12,6 +12,14 @@ function Home() {
   const { filteredChunk, fetchChunk, genres, shows } = useFilteredChinks(genre)
   const [chunk, setChunk] = useState(5)
   const [search, setSearch] = useState('')
+
+  // if genre changes reset the chunk
+  useEffect(() => {
+    setChunk(prevChunk => (
+      prevChunk === chunk ? 5 : chunk
+    ))
+  }, [genre])
+  // then update filteredChunk
   useEffect(() => {
     fetchChunk(0, chunk)
   }, [chunk, genre])
